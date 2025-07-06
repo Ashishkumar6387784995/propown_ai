@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+
+    <title> </title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+          integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand mx-auto mx-lg-0">
+                <img src="images/propownai.png" alt="">
+            </a>
+
+            <div class="d-flex align-items-center d-lg-none">
+                <a href="" class="navbar-icon">Sign In</a>
+                <a class="custom-btn btn" href="#section_5">
+                    Sign Up
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Mortgage Calculator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Property</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home ownership</a></li>
+                            <li><a class="dropdown-item" href="#">House tax savings</a></li>
+                            <li><a class="dropdown-item" href="#">House repairs and improvement</a></li>
+                            <li><a class="dropdown-item" href="#">Solar panel installations</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About US</a></li>
+                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-lg-flex align-items-center d-none ms-auto">
+                    <a href="" class="navbar-icon2">Sign In</a>
+                    <a class="custom-btn btn" href="#section_5">
+                        Sign Up
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="Mortgage_calculator">
+            <div class="container">
+                <div class="heading-1 text-center">
+                    <h1>Mortgage<span> Calculator </span></h1>
+                    <p class="p-2">Get estimated payment amount for your prospect home or existing homes, you can opt for our AI recommendations will match the best lender to provide services for you</p>
+                </div>
+                <div class="row">
+                    <div class="main_img">
+                        <img src="images/m_card.jpg" class="about-image img-fluid"
+                             alt="">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="c_calculator">
+            <div class="container">
+                <div class="row">
+                    <!-- Left Side Form -->
+                    <div class="col-md-6">
+                        <form id="mortgageForm" class="custom-form form_cal">
+                            <div class="mb-3">
+                                <label>Home Value ($)</label>
+                                <input type="number" class="form-control" id="homeValue" value="400000">
+                            </div>
+                            <div class="mb-3">
+                                <label>Down Payment</label>
+                                <div class="input-group">
+                                    <input type="number" class="form-control" id="downPayment" value="80000">
+                                    <div class="input-group-text double-field">
+                                        <input class="form-check-input" type="radio" name="downType" id="amountRadio" checked> $
+                                        <input class="form-check-input ms-3" type="radio" name="downType" id="percentRadio"> %
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label>Interest Rate (%)</label>
+                                <input type="number" class="form-control" id="interestRate" value="6.48">
+                            </div>
+                            <div class="mb-3">
+                                <label>Loan Term (Years)</label>
+                                <input type="number" class="form-control" id="loanTerm" value="30">
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col">
+                                    <label>Start Month</label>
+                                    <select class="form-select" id="startMonth">
+                                        <option>Jan</option>
+                                        <option>Feb</option>
+                                        <option>Mar</option>
+                                        <option>Apr</option>
+                                        <option>May</option>
+                                        <option selected>Jun</option>
+                                        <option>Jul</option>
+                                        <option>Aug</option>
+                                        <option>Sep</option>
+                                        <option>Oct</option>
+                                        <option>Nov</option>
+                                        <option>Dec</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label>Start Year</label>
+                                    <input type="number" class="form-control" id="startYear" value="2025">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label>Property Tax ($/yr)</label>
+                                <input type="number" class="form-control" id="propertyTax" value="3000">
+                            </div>
+                            <div class="mb-3">
+                                <label>PMI (%)</label>
+                                <input type="number" class="form-control" id="pmi" value="0.5">
+                            </div>
+                            <div class="mb-3">
+                                <label>Home Insurance ($/yr)</label>
+                                <input type="number" class="form-control" id="homeInsurance" value="1500">
+                            </div>
+                            <div class="mb-3">
+                                <label>Monthly HOA ($)</label>
+                                <input type="number" class="form-control" id="hoa" value="0">
+                            </div>
+                            <div class="mb-3">
+                                <label>Loan Type</label>
+                                <select class="form-select" id="loanType">
+                                    <option selected>Conventional</option>
+                                    <option>FHA</option>
+                                    <option>USDA</option>
+                                    <option>VA</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label>Buy or Refi</label>
+                                <select class="form-select" id="purchaseType">
+                                    <option selected>Buy</option>
+                                    <option>Refi</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </form>
+                    </div>
+
+                    <!-- Right Side Summary -->
+                    <div class="col-md-6">
+
+                        <div class="profile-thumb">
+                            <div class="profile-title">
+                                <h4 class="mb-0">Mortgage Repayment Summary</h4>
+                            </div>
+                            <div class="mt-4">
+                                <canvas id="paymentChart"></canvas>
+                            </div>
+                            <div class="profile-body">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Total Monthly Payment:</td>
+                                            <td>$<span id="totalMonthly">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>PMI:</td>
+                                            <td><span id="pmiStatus">Not Required</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Down payment amount:</td>
+                                            <td>$<span id="dpAmount">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Down payment %:</td>
+                                            <td><span id="dpPercent">0.00%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Loan pay-off date:</td>
+                                            <td><span id="payoffDate">-</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Interest Paid:</td>
+                                            <td>$<span id="totalInterest">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monthly Tax Paid:</td>
+                                            <td>$<span id="monthlyTax">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Tax Paid:</td>
+                                            <td>$<span id="totalTax">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Monthly Home Insurance:</td>
+                                            <td>$<span id="monthlyIns">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Home Insurance:</td>
+                                            <td>$<span id="totalIns">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Annual Payment Amount:</td>
+                                            <td>$<span id="annualPayment">0.00</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total of <span id="totalNumPayments">360</span> Payments: </td>
+                                            <td>$<span id="totalPayments">0.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="about section-padding" id="section_2">
+            <div class="container">
+                <div class="heading-1 text-left">
+                    <h4><span> Refinance  </span></h4>
+                    <p class="p-2">Please tell us more about your expected mortgage rate and our AI assistant will help you in finding lower meaningful interest rates lender for you. Please fill the form below.</p>
+                </div>
+                <div class="row">
+
+                    <!--<div class="col-lg-7 col-12">-->
+                    <!--    <img src="images/m-calculator.jpg" class="about-image img-fluid"-->
+                    <!--        alt="">-->
+                    <!--</div>-->
+
+                    <div class="col-lg-12 col-12  mt-lg-0">
+                        <form action="#" method="get" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-12">
+                                    <div class="mb-3">
+                                        <label for="floatingInput">Name</label>
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-3 col-12">
+                                    <div class="mb-3">
+                                        <label for="floatingInput">Mobile Number</label>
+                                        <input type="number" name="pnumber" id="pnumber" pattern=" " class="form-control" placeholder="Enter your Number" required="">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-12">
+                                    <div class="mb-3">
+                                        <label for="floatingInput">Email address</label>
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required="">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="">
+                                        <label for="floatingTextarea">Tell me about the project</label>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project" style="height:100px; margin-bottom:0px"> </textarea>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="mb-3">
+                                        <label>Mortgage amount</label>
+                                        <input type="number" class="form-control" id="mortgage-amount" name="message" placeholder="Mortgage amount">
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="mb-3">
+                                        <label>Your current Interest rate</label>
+                                        <input type="number" class="form-control" id="intrest-rate" name="intrest-rate" placeholder="Your current Interest rate">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="mb-3">
+                                        <label>Remaining term</label>
+                                        <input type="number" class="form-control" id="remaining-term" name="remaining" placeholder="Remaining term
+">
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 col-12 ms-auto">
+                                    <button type="submit" class="form-control" style="margin-top:30px">Submit</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="amortization-chart section-padding">
+            <div class="container">
+                <div class="heading-1 text-center">
+                    <h1> Amortization<span> Chart </span></h1>
+                    <p class="p-2">Visual breakdown of principal, interest, taxes & balance over loan term</p>
+                </div>
+                
+                <canvas id="amortizationChart" height="120" ></canvas>
+            </div>
+        </section>
+
+    </main>
+    <section class="footer_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 od-2">
+                    <div class="list-pages">
+                        <ul class="d-flex">
+                            <li>
+                                <a href="#">Mortgage calculator</a>
+                            </li>
+                            <li>
+                                <a href="#">Company</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 od-1">
+                    <div class="social">
+                        <a href="">
+                            <img src="images/propownai.png" alt="">
+                        </a>
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href=" "
+                                   class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li class="social-icon-item"><a href="#" class="social-icon-link bi-pinterest"></a></li>
+
+                            <li class="social-icon-item">
+                                <a href=""
+                                   class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12">
+                    <div class="copyright-text-wrap">
+                        <p class="mb-0">
+                            <span class="copyright-text">
+                                Copyright © 2025 <a href="#">propown.ai</a> Company. All
+                                rights reserved.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.saveslide').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            dot: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    dot: true,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    dot: true,
+                    nav: false
+                },
+                1000: {
+                    items: 5,
+                    nav: true,
+                    loop: false
+                }
+            }
+        })
+    </script>
+
+
+
+
+
+
+    <script>
+        let chart;
+
+        function formatCurrency(value) {
+            return parseFloat(value).toFixed(2);
+        }
+
+        function calculateAndDrawChart() {
+            const homeValue = +$('#homeValue').val() || 300000;
+            let downPayment = +$('#downPayment').val() || 60000;
+            const downIsPercent = $('#percentRadio').is(':checked');
+            if (downIsPercent) {
+                downPayment = homeValue * (downPayment / 100);
+            }
+            const loanAmount = homeValue - downPayment;
+            const interestRate = (+$('#interestRate').val() || 5) / 100 / 12;
+            const years = +($('#loanTerm').val() || 30);
+            const numPayments = years * 12;
+            const propertyTaxYearly = +($('#propertyTax').val() || 3600);
+            const pmiRate = +($('#pmi').val() || 0.5) / 100;
+            const insuranceYearly = +($('#homeInsurance').val() || 1200);
+            const hoaMonthly = +($('#hoa').val() || 100);
+
+            const monthlyPI = (loanAmount * interestRate) / (1 - Math.pow(1 + interestRate, -numPayments));
+            const monthlyTax = propertyTaxYearly / 12;
+            const monthlyIns = insuranceYearly / 12;
+            const totalMonthly = monthlyPI + monthlyTax + monthlyIns + hoaMonthly;
+
+            const totalInterest = (monthlyPI * numPayments) - loanAmount;
+            const totalTax = propertyTaxYearly * years;
+            const totalInsurance = insuranceYearly * years;
+            const totalPayment = totalMonthly * numPayments;
+
+            const pmiStatus = (downPayment / homeValue) < 0.2 ? `${(loanAmount * pmiRate / 12).toFixed(2)} / mo` : 'Not Required';
+
+            const startMonth = $('#startMonth').val() || 'January';
+            const startYear = +($('#startYear').val() || new Date().getFullYear());
+            const payoffMonthIndex = (new Date(Date.parse(startMonth + " 1, 2000")).getMonth() + (numPayments % 12)) % 12;
+            const payoffYear = startYear + Math.floor(numPayments / 12);
+            const payoffDate = new Date(0, payoffMonthIndex).toLocaleString('default', { month: 'long' }) + `, ${payoffYear}`;
+
+            $('#totalMonthly').text(formatCurrency(totalMonthly));
+            $('#dpAmount').text(formatCurrency(downPayment));
+            $('#dpPercent').text(formatCurrency((downPayment / homeValue) * 100) + '%');
+            $('#totalInterest').text(formatCurrency(totalInterest));
+            $('#monthlyTax').text(formatCurrency(monthlyTax));
+            $('#totalTax').text(formatCurrency(totalTax));
+            $('#monthlyIns').text(formatCurrency(monthlyIns));
+            $('#totalIns').text(formatCurrency(totalInsurance));
+            $('#annualPayment').text(formatCurrency(totalMonthly * 12));
+            $('#totalPayments').text(formatCurrency(totalPayment));
+            $('#totalNumPayments').text(numPayments);
+            $('#pmiStatus').text(pmiStatus);
+            $('#payoffDate').text(payoffDate);
+
+            const chartData = {
+                labels: [
+                    `Principal & Interest: $${formatCurrency(monthlyPI)}`,
+                    `Property Tax: $${formatCurrency(monthlyTax)}`,
+                    `Home Insurance: $${formatCurrency(monthlyIns)}`,
+                    `HOA: $${formatCurrency(hoaMonthly)}`
+                ],
+                datasets: [{
+                    label: 'Monthly Breakdown',
+                    data: [monthlyPI, monthlyTax, monthlyIns, hoaMonthly],
+                    backgroundColor: ['#14b789', '#f28e2b', '#e15759', '#76b7b2']
+                }]
+            };
+
+            if (chart) chart.destroy();
+
+            chart = new Chart($('#paymentChart'), {
+                type: 'pie',
+                data: chartData,
+                options: {
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+
+        // Run on page load
+        $(document).ready(function () {
+            calculateAndDrawChart();
+        });
+
+        // Run on form submit
+        $('#mortgageForm').on('submit', function (e) {
+            e.preventDefault();
+            calculateAndDrawChart();
+        });
+    </script>
+    <!-- Add this inside the <script> tag or in custom.js -->
+    <script>
+        let amortChart;
+
+        function generateAmortizationSchedule(loanAmount, rate, years, monthlyTax, monthlyIns, startYear) {
+            const months = years * 12;
+            const monthlyRate = rate / 100 / 12;
+            const schedule = [];
+            let balance = loanAmount;
+
+            const monthlyPI = (loanAmount * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -months));
+
+            for (let i = 0; i < months; i++) {
+                const interest = balance * monthlyRate;
+                const principal = monthlyPI - interest;
+                const taxesFees = monthlyTax + monthlyIns;
+                schedule.push({
+                    year: startYear + Math.floor(i / 12),
+                    principal,
+                    interest,
+                    taxesFees,
+                    balance: Math.max(balance - principal, 0)
+                });
+                balance -= principal;
+            }
+            return schedule.reduce((acc, cur) => {
+                let existing = acc.find(x => x.year === cur.year);
+                if (!existing) {
+                    acc.push({
+                        year: cur.year,
+                        principal: cur.principal,
+                        interest: cur.interest,
+                        taxesFees: cur.taxesFees,
+                        balance: cur.balance
+                    });
+                } else {
+                    existing.principal += cur.principal;
+                    existing.interest += cur.interest;
+                    existing.taxesFees += cur.taxesFees;
+                    existing.balance = cur.balance;
+                }
+                return acc;
+            }, []);
+        }
+
+        function drawAmortizationChart() {
+            const homeValue = +$('#homeValue').val() || 300000;
+            let downPayment = +$('#downPayment').val() || 60000;
+            const downIsPercent = $('#percentRadio').is(':checked');
+            if (downIsPercent) {
+                downPayment = homeValue * (downPayment / 100);
+            }
+            const loanAmount = homeValue - downPayment;
+            const rate = +$('#interestRate').val() || 5;
+            const years = +($('#loanTerm').val() || 30);
+            const monthlyTax = (+$('#propertyTax').val() || 3600) / 12;
+            const monthlyIns = (+$('#homeInsurance').val() || 1200) / 12;
+            const startYear = +($('#startYear').val() || new Date().getFullYear());
+
+            const amortData = generateAmortizationSchedule(loanAmount, rate, years, monthlyTax, monthlyIns, startYear);
+
+            const labels = amortData.map(d => d.year);
+            const principal = amortData.map(d => d.principal.toFixed(0));
+            const interest = amortData.map(d => d.interest.toFixed(0));
+            const taxesFees = amortData.map(d => d.taxesFees.toFixed(0));
+            const balances = amortData.map(d => d.balance.toFixed(0));
+
+            if (amortChart) amortChart.destroy();
+
+            const ctx = document.getElementById('amortizationChart').getContext('2d');
+            amortChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels,
+                    datasets: [
+                        {
+                            label: 'Principal',
+                            data: principal,
+                            backgroundColor: '#14b789'
+                        },
+                        {
+                            label: 'Interest',
+                            data: interest,
+                            backgroundColor: '#2f4b7c'
+                        },
+                        {
+                            label: 'Taxes & Fees',
+                            data: taxesFees,
+                            backgroundColor: '#a05195'
+                        },
+                        {
+                            label: 'Balance',
+                            data: balances,
+                            type: 'line',
+                            borderColor: '#ff7c43',
+                            backgroundColor: 'transparent',
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            stacked: true,
+                            title: {
+                                display: true,
+                                text: 'Payments'
+                            }
+                        },
+                        y1: {
+                            position: 'right',
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Balance'
+                            },
+                            grid: {
+                                drawOnChartArea: false
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        legend: {
+                            position: 'top'
+                        }
+                    },
+                    responsive: true
+                }
+            });
+        }
+
+        $(document).ready(() => {
+            drawAmortizationChart();
+        });
+
+        $('#mortgageForm').on('submit', function (e) {
+            e.preventDefault();
+            calculateAndDrawChart();
+            drawAmortizationChart();
+        });
+    </script>
+
+
+
+</body>
+
+</html>
